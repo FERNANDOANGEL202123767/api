@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const API_URL = 'https://968a-2605-59c8-7146-110-752e-ee9e-bfe8-d347.ngrok-free.app/api-traks';
-const API_URL = 'http://localhost:8080/api-traks';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api-traks';
 
 
 export const getCanciones = () => {
